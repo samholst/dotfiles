@@ -68,7 +68,8 @@ alias gdiff="git diff"
 alias gcm="git commit -m"
 alias gpush="git push"
 alias gco="git checkout -b"
-alias gpull="git pull"
+alias gp="git pull"
+alias gpo="git pull origin"
 
 #Crystal
 alias cr="crystal"
