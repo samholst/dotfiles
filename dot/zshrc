@@ -106,6 +106,8 @@ export PATH=~/usr/local/bin:/usr/bin:/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin
 #eval "$(rbenv init -)"
 
 
+alias showFiles="defaults write com.apple.finder AppleShowAllFiles YES;killall Finder /System/Library/CoreServices/Finder.app"
+alias hideFiles="defaults write com.apple.finder AppleShowAllFiles NO;killall Finder /System/Library/CoreServices/Finder.app"
 alias subl="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
 #alias cdport="cd /Library/WebServer/Documents/bottega/projects/portfolio/"
 #alias cdchap="cd /Library/WebServer/Documents/chapinka/"
