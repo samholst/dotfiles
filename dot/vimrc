@@ -285,3 +285,6 @@ nnoremap <leader>m A # => <Esc>
 "
 vnoremap <leader>m :norm A # => <Esc>
 highlight clear SignColumn
+highlight GitGutterAdd    guifg=#009900
+highlight GitGutterChange guifg=#bbbb00
+highlight GitGutterDelete guifg=#ff2222
