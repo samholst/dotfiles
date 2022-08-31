@@ -73,10 +73,24 @@ syntax enable
 filetype plugin indent on
 set autowrite
 
+
+" My Code Style
+" augroup myfiletypes
+" 	autocmd!
+" 	autocmd FileType slim,coffee,ruby,eruby,yaml,cpp,scss,c,crystal,php,html,js,javascript,sass,rb,sh,sql set ai sw=2 sts=2 et
+" augroup END
+
+" For SareKon Code
+" https://www.reddit.com/r/vim/comments/1mrxdx/how_to_change_tab_width_and_other_tab_settings/
+" set tabstop=2
+" inoremap <tab> <c-v><tab>
 augroup myfiletypes
 	autocmd!
-	autocmd FileType slim,coffee,ruby,eruby,yaml,cpp,scss,c,crystal,php,html,js,javascript,sass,rb,sh set ai sw=2 sts=2 et
+	autocmd FileType ruby,eruby,yaml,scss,html,js,javascript,sass,rb,sh,sql set ai sw=2 sts=0 ts=2 noexpandtab
 augroup END
+
+
+set ai sw=8 sts=0 noexpandtab smarttab
 
 " Ruby Complete
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
